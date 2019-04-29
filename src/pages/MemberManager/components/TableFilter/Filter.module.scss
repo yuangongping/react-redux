@@ -1,0 +1,32 @@
+.tableFilter{
+  display: flex;
+  flex-wrap: wrap;
+  background-color: white;
+  padding: var(--base-distance, 8px);
+  border-radius: var(--radius, 4px) var(--radius, 4px) 0 0;
+  .filterItem{
+    display: flex;
+    align-items: center;
+    margin: var(--base-distance, 8px);
+    label{
+      margin-right: var(--base-distance, 8px);
+    }
+  }
+  .submitBotton{
+    margin: var(--base-distance, 8px);
+  }
+}
+
+.memberManager{
+  min-width: 600px;
+  :global(.next-dialog-body){
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    :global(.next-input){
+      &+:global(.next-input){
+        margin-top: 16px;
+      }
+    }
+  }
+}

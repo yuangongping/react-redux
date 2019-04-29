@@ -1,0 +1,69 @@
+:root {
+  --background-color-dark: #262626;
+  --background-color-dark-2: #595959;
+  --background-color-light: #fafafa;
+  --background-color-light-2: #f5f5f5;
+  --brand-primary: #13c2c2;
+  --brand-primary-tap: #08979c;
+  --brand-primary-ondark: #e6fffb;
+  --brand-blue: rgb(20, 200, 210);
+  --brand-dark: rgb(51, 51, 51);
+
+  --yellow: rgb(255, 215, 80);
+  --pink: rgb(240, 155, 190);
+  --green: rgb(70, 180, 90);
+  --red: rgb(240, 85, 45);
+
+  --radius: 4px;
+  --base-distance: 8px;
+  --component-distance: 16px;
+}
+
+.fit-content{
+  width: -webkit-fill-available;
+  height: -webkit-fill-available;
+}
+
+.fill-width{
+  width: -webkit-fill-available;
+}
+
+.fill-height{
+  height: -webkit-fill-available;
+}
+
+#CONTAINER-CC-TOOLBAR{
+  top: 8px;
+  right: 200px;
+}
+
+.spacer{
+  flex: 1;
+}
+
+.icon{
+  width: 2rem;
+  height: 2rem;
+}
+.next-overlay-wrapper{
+  .next-nav.next-normal{
+    border-radius: 8px;
+    overflow: hidden;
+    .next-nav-item.next-menu-item{
+      &.next-selected{
+      }
+      .next-menu-item-text{
+        display: inline-flex;
+      }
+    }
+  }
+}
+
+.next-icon.next-nav-icon{
+  width: 20px;
+  height: 40px;
+}
+
+.pointer{
+  cursor: pointer;
+}

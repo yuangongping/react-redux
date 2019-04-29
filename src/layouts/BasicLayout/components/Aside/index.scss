@@ -1,0 +1,89 @@
+.ice-layout {
+  .ice-design-layout-aside {
+    .collapse-btn {
+      cursor: pointer;
+      display: block;
+      width: 100%;
+      text-align: center;
+      margin-bottom: 20px;
+      color: $color-brand1-6;
+      &:hover{
+        background-color: #b6f5f8;
+        border-radius: 5px;
+      }
+    }
+
+    .next-nav{
+      background: transparent;
+      overflow-y: auto;
+      position: relative;
+      .next-menu-footer{
+        position: absolute;
+        bottom: 0;
+        width: 200px;
+      }
+      .next-nav-item.next-menu-item {
+        background-color: transparent;
+        color: white;
+        .next-menu-item-text{
+          display: inline-flex;
+        }
+        &.next-selected{
+          background-color: #b6f5f8;
+          box-shadow:
+            0 3px 3px -2px rgba(0,0,0,.2),
+            0 3px 4px 0 rgba(0,0,0,.14),
+            0 1px 8px 0 rgba(0,0,0,.12);
+          color: $color-brand1-6;
+          border-radius: 5px;
+        }
+      }
+    }
+
+    .next-nav-sub-nav-item {
+      background: transparent;
+    }
+
+    .menu-btn {
+      position: fixed;
+      left: 0;
+      top: 82px;
+      width: 40px;
+      height: 40px;
+      line-height: 40px;
+      border-radius: 0 6px 6px 0;
+      color: #fff;
+      background: #2077ff;
+      text-align: center;
+      cursor: pointer;
+      z-index: 9;
+      text-decoration: none;
+      &:hover {
+        color: #e7e7e7;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .ice-layout {
+    .ice-design-layout-aside {
+      position: fixed;
+      left: -256px;
+      top: 0px;
+      bottom: 0;
+      padding: 0 20px;
+      background: #2e323e !important;
+      z-index: 9999;
+    }
+
+    .open-drawer {
+      transform: translateX(256px);
+      .logo {
+        width: 200px;
+        margin: 20px 0;
+        text-align: center;
+      }
+    }
+  }
+}
